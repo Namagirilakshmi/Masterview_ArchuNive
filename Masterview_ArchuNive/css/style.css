@@ -1,0 +1,110 @@
+body{
+    margin: 0 auto;
+    width: 99%; 
+    background: url("../images/myBackground.jpg")no-repeat ;
+    background-size: 99% 500px; 
+    background-position: center;
+    height: 500px;
+}
+header{
+    margin-top: 12px;
+    width: 98%;
+}
+h1{
+    color: #fff;
+    font-size: 3.0em;
+    text-align: center;
+}
+/*Item list style begins here*/
+aside{
+    margin: 3%;
+	float: left;
+	width: 45%;
+ }
+ aside ul {
+    list-style-type: none;
+    background-color: #f1f1f1;
+    opacity: 0.8;
+    border: 1px solid #555;
+    box-sizing: border-box;
+}
+aside li{
+    display: block;
+    padding: 18px 18px;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+}
+aside li:last-child{
+    border-bottom: none;
+}
+section li,aside li::first-letter{
+     text-transform: capitalize;
+}
+aside ul li:hover {
+    background-color: #555;
+    color: white;
+} 
+/*Item list style ends here*/
+
+/*description style begins here*/
+#description{
+	float: left;
+	width: 45%;
+    margin: 3% 0 0 0;
+	height: 335px;
+	display: none;
+    /*opacity: 0.6;*/
+    /*background-color: #555;*/
+}
+
+#description li{
+    color: #fff;
+    font-family: cursive;
+    padding: 18px 18px;
+}
+/*description style ends here*/
+#returnToList{
+    display: none;
+}
+#backButton{
+    background: url(../images/backarrow.png)no-repeat;
+    border: none;
+    width: 50px;
+    color: white;
+    padding: 8px 14px;
+    cursor: pointer;
+    height: 50px;
+    opacity: 0.8;
+    float: right;
+} 
+img{
+    width: 25px;
+    height: 20px;
+    float: right;
+}
+/*media query begin here*/
+    /*for small devices*/
+        @media(max-width: 480px){
+            #description{
+                display: none;
+                width: 95%
+            }
+            #list{
+                width: 95%
+            }
+            h1{
+                font-size: 1.3em;
+            }
+        }
+    /*for medium devices*/
+        @media(min-width: 481px) and (max-width: 768px){
+           #list,#description{
+            width: 47%;
+           }
+           h1{
+                font-size: 2.1em;
+            }
+        }
+/*media query ends here*/
